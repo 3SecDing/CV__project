@@ -1,0 +1,16 @@
+MODEL:
+  BACKBONE: 'light_resiual'
+
+DATASET:
+  TRAIN_IMAGES_DIR: './dataset/Sony/short/'
+  GT_IMAGES_DIR: './dataset/Sony/long/'
+
+
+TRAIN:
+  CHECKPOINT_DIR: './sony_light_resiual_model_checkpoint/'
+  RESULTS_DIR: './sony_light_resiual_model_train_results/'
+
+TEST:
+  RESULTS_DIR: './sony_light_resiual_model_test_results/'
+
+GPU_ID: 0

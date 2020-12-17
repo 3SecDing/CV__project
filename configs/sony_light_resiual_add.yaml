@@ -1,0 +1,19 @@
+MODEL:
+  BACKBONE: 'light_resiual'
+  UPSAMPLE_TYPE: 'bilinear'
+
+DATASET:
+  TRAIN_IMAGES_DIR: './dataset/Sony/short/'
+  GT_IMAGES_DIR: './dataset/Sony/long/'
+
+
+TRAIN:
+  CHECKPOINT_DIR: './sony_light_resiual_add_model_checkpoint/'
+  RESULTS_DIR: './sony_light_resiual_add_model_train_results/'
+  EPOCH_MAX: 1000
+  LR_STEP: [600, 800]
+
+TEST:
+  RESULTS_DIR: './sony_light_resiual_add_model_test_results/'
+
+GPU_ID: 0
